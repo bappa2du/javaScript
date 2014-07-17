@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Type of Data</h1>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Show</button>
+
+    <script>
+        function myFunction()
+        {
+            document.getElementById('demo').innerHTML =
+                    typeof 12+'<br/>'+
+                    typeof 'abcd'+'<br/>'+
+                    typeof "abcd"+'<br/>'+
+                    typeof true+'<br/>'+
+                    typeof 1.34+'<br/>'+
+                    typeof [1,2,3]+'<br/>';
+        }
+    </script>
+</body>
+</html>
