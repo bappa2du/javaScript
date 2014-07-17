@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validation</title>
+</head>
+<body>
+    <script>
+        function myfunction()
+        {
+            var text;
+            var x = document.getElementById('number').value;
+            if(isNaN(x) || x<1 || x>10)
+            {
+                text = 'Invalid';
+            }
+            else
+            {
+                text = 'Ok';
+            }
+            document.getElementById('demo').innerHTML = text;
+        }
+    </script>
+    Enter number from 1 to 10 :
+    <input type="text" id="number"/>
+    <button type="button" onclick="myfunction()">Check</button>
+    <p id="demo"></p>
+</body>
+</html>
