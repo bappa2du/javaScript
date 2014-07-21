@@ -2,10 +2,10 @@
     <head>
         <title>::JAVASCRIPT::</title>
         <script type="text/javascript">
-            function myfunction()
-            {
-                alert("Hello Bappa");
-            }
+//            function myfunction()
+//            {
+//                alert("Hello Bappa");
+//            }
 
         </script>
     </head>
@@ -34,14 +34,21 @@
             var Null_value;
             document.write("<br/>"+typeof Null_value);
 
-            var x;
-            document.write("<br/>"+typeof x);
+            var x=2;
+            document.write("<br/>"+typeof x+"<br/>");
 
-            var z;
-            console.log(typeof z);
-            console.log(window);
-            console.log(this);
-            console.log(self);
+//            var z;
+//            console.log(typeof z);
+//            console.log(window);
+//            console.log(this);
+//            console.log(self);
+//            console.log(window.x);
+            function doha(){
+                var x=2;
+                document.write(x+"<br/>");
+            }
+
+            document.write(typeof doha());
 
 
             //document.writeln("Hello Hi");
