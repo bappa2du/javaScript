@@ -94,11 +94,12 @@
 
             function addTwoNumber()
             {
-                var sum = 2 + 3;
+                //var sum = x + y;
+                var sum = arguments[0] + arguments[1];
                 return sum;
             }
 
-            var sum = addTwoNumber();
+            var sum = addTwoNumber(22,3);
 
             document.write(sum);
 
