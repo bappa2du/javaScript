@@ -115,7 +115,17 @@
 
             document.write(sum1+"<br/>");
 
+            var addThreeNumbers = function()
+            {
+                return arguments[0]+arguments[1];
+            }
 
+            document.write(addThreeNumbers(2,5));
+
+            document.write(function()
+                            {
+                                return arguments[0]+arguments[1]+arguments[2];
+                            }(2,4,7));
 
         </script>
     </body>
