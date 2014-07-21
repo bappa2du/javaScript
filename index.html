@@ -48,15 +48,25 @@
                 document.write(x+"<br/>");
             }
 
-            document.write(typeof doha());
+            document.write(typeof doha()+"<br/>");
+
+            try
+            {
+                doc.orr("hi");
+            }
+            catch (error)
+            {
+                document.write(error.name+"<br/>");
+                document.write(error.message);
+            }
 
 
-            //document.writeln("Hello Hi");
-            //document.write("Hello Hi");
-            //document.writeln("Hello Hi");
-            //console.log("Bappa");
-            //confirm("Enter the value ??");
-            //prompt("Entervalue ??","Please here");
+//            document.writeln("Hello Hi");
+//            document.write("Hello Hi");
+//            document.writeln("Hello Hi");
+//            console.log("Bappa");
+//            confirm("Enter the value ??");
+//            prompt("Entervalue ??","Please here");
         </script>
     </body>
 </html>
