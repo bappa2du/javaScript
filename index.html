@@ -120,12 +120,32 @@
                 return arguments[0]+arguments[1];
             }
 
-            document.write(addThreeNumbers(2,5));
+            document.write(addThreeNumbers(2,5)+"<br/>");
 
             document.write(function()
                             {
                                 return arguments[0]+arguments[1]+arguments[2];
                             }(2,4,7));
+
+
+
+            document.write("<br/>"+sum);
+            document.write("<br/>");
+
+            function add() //closure
+            {
+                var counter = 0;
+                function plus()
+                {
+                    counter += 1;
+                }
+                plus();
+                return counter;
+            }
+
+            document.write(add());
+
+
 
         </script>
     </body>
