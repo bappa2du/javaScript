@@ -12,7 +12,40 @@
 
 <body>
 
+    <ul>
+        <li>Menu 1</li>
+        <li>Menu 1</li>
+        <li>Menu 1</li>
+        <li>Menu 1</li>
+        <li>Menu 1</li>
+    </ul>
+
 <script type="text/javascript">
+
+    /******************************************
+    /
+    /        DOM
+    /
+    /
+    *******************************************/
+
+
+
+    (function(){
+        try{
+            var other = document.getElementsByTagName('li');
+            var total = other.length;
+            for(i=0;i<=total;i++)
+            {
+                document.write(other[i].innerHTML);
+            }
+
+        }
+        catch (e)
+        {
+            document.write(e.message);
+        }
+    })();
 
     //"use strict"
 
@@ -23,6 +56,7 @@
     ****************************************/
 
     // closure
+    document.write("<br/>");
     function init()
     {
         var name = "mozila";
@@ -230,27 +264,6 @@
 
     document.write(mamun.lastname);
 
-    /**************************************
-    /
-    /       DOM
-    /   Document Object Model
-    /
-    /
-    ****************************************/
-
-
-
-</script>
-
-    <p id="demo">
-        Doha
-    </p>
-    <button onclick="myfunction()">Click</button>
-    <script>
-        function myfunction()
-        {
-            document.getElementById('demo').innerHTML = 'bappa';
-        }
     </script>
 
 </body>
