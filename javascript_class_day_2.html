@@ -16,6 +16,12 @@
 
     "use strict"
 
+    /****************************************
+    /
+    /            CLOSURE FUNCTION
+    /
+    ****************************************/
+
     function init()
     {
         var name = "mozila";
@@ -52,7 +58,12 @@
 
     document.write(func(2,3)+"<br/>");
 
-    //Array
+    /*******************************************
+    /
+    /              ARRAY()
+    /
+    /
+    ********************************************/
 
     var anArray = new Array('apple','banana','grape');
 
@@ -172,15 +183,17 @@
 
     var myCar = new Car('Eagle','V-2011',2011);
 
+    var myCar1 = new Car('Supreme','V-9011',2011);
+
     document.write(typeof myCar+'<br/>');
 
     document.write(myCar.model+'<br/>');
 
+    document.write(myCar1.model+'<br/>');
+
     document.write(myCar.drive()+"<br/>");
 
     //alert(this);
-
-
 
     var ftfl =
     {
@@ -198,11 +211,7 @@
 
     var x1 = ftfl.student1;
 
-
-
     document.write(x1());
-
-
 
 
 </script>
