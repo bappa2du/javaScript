@@ -14,10 +14,10 @@
 
     <ul>
         <li>Menu 1</li>
-        <li>Menu 1</li>
-        <li>Menu 1</li>
-        <li>Menu 1</li>
-        <li>Menu 1</li>
+        <li>Menu 12</li>
+        <li>Menu 123</li>
+        <li>Menu 1234</li>
+        <li>Menu 12345</li>
     </ul>
 
 <script type="text/javascript">
@@ -35,9 +35,13 @@
         try{
             var other = document.getElementsByTagName('li');
             var total = other.length;
-            for(i=0;i<=total;i++)
+            for(i=0;i<total;i++)
             {
-                document.write(other[i].innerHTML);
+                //document.write(other[i].innerHTML);
+                //document.write(other[i].nodeType);
+                //document.write(other[i].firstChild.nodeValue);
+                document.write(other[i].childNodes[0].nodeValue);
+                document.write("<br/>");
             }
 
         }
