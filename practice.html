@@ -54,11 +54,19 @@
         }
 
         document.write(typeof NaN);         //number
+        document.write(typeof null);         //object
         document.write(typeof '');          //string
         document.write(typeof ('t'+'r'));   //string
         document.write(typeof '8');         //string
         document.write(parseInt('ho'));     //NaN
-        document.write(Number(true));     //NaN
+        document.write(Number(true));     //1
+
+        var car = ['audi','ferrari','toyota'];
+
+        document.write(car[0]);
+        document.write(typeof car);         //object
+        document.write(Number('45b'));      //NaN
+        document.write(parseInt('45b'));    //45
 
     </script>
 </body>
