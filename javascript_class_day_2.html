@@ -1,10 +1,17 @@
+<!doctype html>
+
 <html>
+
 <head>
+
     <title>
         My Javascript
     </title>
+
 </head>
+
 <body>
+
 <script type="text/javascript">
 
     function init()
@@ -13,13 +20,30 @@
 
         function display()
         {
-            alert(name);
+            document.write(name+"<br/>");
         }
         display();
     }
 
     init();
 
+    function mango()
+    {
+        var fruit = "Mangoes";
+
+        function newMango()
+        {
+            document.write(fruit);
+        }
+        newMango();
+    }
+
+    var myMango = mango();
+
+    myMango;
+
 </script>
+
 </body>
+
 </html>
