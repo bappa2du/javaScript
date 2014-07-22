@@ -129,7 +129,30 @@
 
     document.write(student.name+'<br/>');
 
+    document.write(student['name']+'<br/>');
+
     document.write(student.shirt()+'<br/>');
+
+    var animal =
+    {
+        name: 'Zebra',
+        color: 'yellow',
+        height: '9 feet',
+        other:
+        {
+            run: false,
+            food:
+            {
+                mainFood :'rice',
+                otherFood:'corn'
+            }
+        }
+
+    }
+
+    document.write(animal.other.food.mainFood+"<br/>");
+
+    document.write(animal['other']['food']['mainFood']);
 
 
 </script>
