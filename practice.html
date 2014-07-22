@@ -67,6 +67,17 @@
         document.write(typeof car);         //object
         document.write(Number('45b'));      //NaN
         document.write(parseInt('45b'));    //45
+        document.write("<br/>");
+
+        function apple()
+        {
+            return arguments[0]+arguments[1];
+        }
+
+        document.write(apple(2,4,5)+"<br/>");
+
+        document.write(typeof apple+"<br/>");  //function
+        document.write(typeof apple()); //number
 
     </script>
 </body>
