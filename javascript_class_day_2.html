@@ -161,11 +161,12 @@
         this.make = make;
         this.model = model;
         this.year = year;
-        this.drive = function()
+        this.drive = function ()
         {
-            return 'I am driving '+this.make;
+            return 'this is internal';
         }
     }
+
 
     var myCar = new Car('Eagle','V-2011',2011);
 
@@ -173,7 +174,20 @@
 
     document.write(myCar.model+'<br/>');
 
-    document.write(myCar.drive());
+    document.write(myCar.drive()+"<br/>");
+
+    //alert(this);
+
+    var ftfl =
+    {
+        student:function()
+        {
+            return this;
+        }
+    }
+
+    document.write(ftfl.student());
+
 
 
 </script>
