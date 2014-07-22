@@ -41,7 +41,17 @@
             return number;
         }
 
-        document.write(add());  //Output 6
+        document.write(add()+"<br/>");  //Output 6
+
+        try
+        {
+            document.writ("Bappa");
+        }
+        catch(error)
+        {
+            document.write(error.name+"<br/>");
+            document.write(error.message);
+        }
 
     </script>
 </body>
