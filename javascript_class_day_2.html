@@ -180,15 +180,22 @@
 
     var ftfl =
     {
-        student:function()
+        student1:function()
         {
             return this;
         }
     }
+
     //object method
-    document.write(ftfl.student()+"<br/>");
+    document.write(ftfl.student1()+"<br/>");
+
     //associative array method
-    document.write(ftfl['student']()+"<br/>");
+    document.write(ftfl['student1']()+"<br/>");
+
+    var x1 = ftfl.student1;
+
+    document.write(x1());
+
 
 
 
