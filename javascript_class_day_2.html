@@ -74,9 +74,9 @@
 
     document.write(typeof singleArray+"<br/>");
 
-    var lireralArray = [];
+    var literalArray = [];
 
-    document.write(typeof lireralArray+"<br/>");
+    document.write(typeof literalArray+"<br/>");
 
     var car = ['Audi',['apple','pineapple',['rickshaw']],'Ferrari','Toyota'];
 
@@ -84,7 +84,23 @@
 
     document.write(car[0][3]+"<br/>");
 
+    /******************************************
+    /
+    /
+    /                OBJECT
+    /
+    /
+    *******************************************/
 
+    var buses = new Object();
+
+    buses.name = 'Automate';
+    buses.wheel = '4';
+    buses.drive = function(){document.write('I am driving the car. ');}
+
+    document.write(buses.name+"<br/>");
+
+    document.write(buses.drive()+"<br/>");
 
 
 </script>
