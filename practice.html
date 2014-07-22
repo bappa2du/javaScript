@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //self executing function
+        document.write(function(a,b)
+        {
+            return a*b;
+        }(5,8));
+
+        //type casting
+        var x = false;
+        if(x)
+        {
+            document.write('true');
+        }
+        else
+        {
+            document.write('false');
+        }
+        function bappa(x,y)
+        {
+            var sum;
+            count = 3;
+            return sum = x+y;
+        }
+        document.write(bappa(3,5));
+
+        document.write(count); //Global variable for out side of function
+
+        function add()          //Closure
+        {
+            var number = 2;
+            function plus()     //Nested function
+            {
+                number += 4;
+            }
+            plus();
+            return number;
+        }
+
+        document.write(add());  //Output 6
+
+    </script>
+</body>
+</html>
