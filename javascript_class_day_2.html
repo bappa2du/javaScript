@@ -14,14 +14,15 @@
 
 <script type="text/javascript">
 
-    "use strict"
+    //"use strict"
 
     /****************************************
     /
-    /            CLOSURE FUNCTION
+    /            FUNCTION
     /
     ****************************************/
 
+    // closure
     function init()
     {
         var name = "mozila";
@@ -81,12 +82,14 @@
 
     var singleArray = new Array(1);
 
+    //single Array definition
     singleArray[0] = 23;
 
     document.write(singleArray[0]+"<br/>");
 
     document.write(typeof singleArray+"<br/>");
 
+    //Literal array definition
     var literalArray = [];
 
     document.write(typeof literalArray+"<br/>");
@@ -167,18 +170,22 @@
 
     document.write(animal['other']['food']['mainFood']+"<br/>");
 
-    //Define object using constructor
+    //Define object using constructor function
 
     function Car(make,model,year)
     {
         this.make = make;
         this.model = model;
         this.year = year;
-        this.drive = function ()
-        {
-            return 'this is internal';
-        }
+        this.drive = drive;
     }
+
+    function drive()
+    {
+        return 'this is internal';
+    }
+
+    //alert(drive());
 
 
     var myCar = new Car('Eagle','V-2011',2011);
@@ -212,6 +219,8 @@
     var x1 = ftfl.student1;
 
     document.write(x1());
+
+
 
 
 </script>
