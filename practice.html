@@ -4,13 +4,16 @@
 </head>
 <body>
     <script type="text/javascript">
+
         //self executing function
+
         document.write(function(a,b)
         {
             return a*b;
-        }(5,8));
+        }(2,3));
 
         //type casting
+
         var x = false;
         if(x)
         {
@@ -88,9 +91,13 @@
 
         document.write(myName()+"<br/>");
 
-        document.write(typeof myName());  //string
+        document.write(typeof myName()+"<br/>");  //string
 
-        document.write(typeof myName);    //function
+        document.write(typeof myName+"<br/>");    //function
+
+        function gavin(){}
+
+        document.write(typeof gavin()+"<br/>");
 
     </script>
 </body>
