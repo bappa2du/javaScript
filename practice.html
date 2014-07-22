@@ -50,8 +50,15 @@
         catch(error)
         {
             document.write(error.name+"<br/>");
-            document.write(error.message);
+            document.write(error.message+"<br/>");
         }
+
+        document.write(typeof NaN);         //number
+        document.write(typeof '');          //string
+        document.write(typeof ('t'+'r'));   //string
+        document.write(typeof '8');         //string
+        document.write(parseInt('ho'));     //NaN
+        document.write(Number(true));     //NaN
 
     </script>
 </body>
