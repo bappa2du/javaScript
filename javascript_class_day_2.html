@@ -161,11 +161,19 @@
         this.make = make;
         this.model = model;
         this.year = year;
+        this.drive = function()
+        {
+            return 'I am driving '+this.make;
+        }
     }
 
     var myCar = new Car('Eagle','V-2011',2011);
 
-    document.write(typeof myCar);
+    document.write(typeof myCar+'<br/>');
+
+    document.write(myCar.model+'<br/>');
+
+    document.write(myCar.drive());
 
 
 </script>
