@@ -152,7 +152,20 @@
 
     document.write(animal.other.food.mainFood+"<br/>");
 
-    document.write(animal['other']['food']['mainFood']);
+    document.write(animal['other']['food']['mainFood']+"<br/>");
+
+    //Define object using constructor
+
+    function Car(make,model,year)
+    {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    var myCar = new Car('Eagle','V-2011',2011);
+
+    document.write(typeof myCar);
 
 
 </script>
