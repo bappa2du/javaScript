@@ -224,11 +224,11 @@
 
     var Person1 = {kind:'man'}
 
-    var mamun = Object.create(Person1);
+    var mamun = Object.create(Person1,{age:{value:27}},{lastname:{value:}});
 
-    document.write(mamun.kind);
+    document.write(mamun.kind+"<br/>");
 
-
+    document.write(mamun.lastname);
 
 
 
