@@ -84,13 +84,13 @@
 
     document.write(car[0][3]+"<br/>");
 
-    /******************************************
+    /*******************************************
     /
     /
     /                OBJECT
     /
     /
-    *******************************************/
+    /*******************************************/
 
     var buses = new Object();
 
@@ -105,6 +105,31 @@
     document.write(buses.name+"<br/>");
 
     document.write(buses.drive()+"<br/>");
+
+    document.write(typeof buses+"<br/>");
+
+    //Object literal
+
+    //var student = {}
+
+    var student =
+    {
+        name:'bappa',
+        roll:'2014000022',
+        class:'ITS[laravel]',
+
+        shirt:function()
+        {
+            document.write('my shirt color red.');
+            return 'Bye..';
+        }
+    }
+
+    document.write(typeof student+"<br/>");
+
+    document.write(student.name+'<br/>');
+
+    document.write(student.shirt()+'<br/>');
 
 
 </script>
