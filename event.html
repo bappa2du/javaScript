@@ -2,9 +2,12 @@
 	<head>
 
 		<title>Understanding event & Event handler registration</title>
+
 		<style>
+
 			img{display: none;}
 			img[alt=game]{display: block;}
+
 		</style>
 
 	</head>
@@ -35,14 +38,27 @@
 
 <form>
 
-	<input id='fullname' name='fullname'/><br/>
+	<input id='fullname' name='name'/><br/>
 
-	<button name='button' type='submit' onclick="alert('I am click')">Click Me</button>
+	<button name='button' type='submit' onclick="return validatename()">Click Me</button>
 
 </form>
 
 <script>
-	
+	function validatename()
+	{
+		var fullName = document.getElementById('fullname').value;
+		if(fullName == '')
+		{
+			alert("empty");
+		}
+		else
+		{
+			alert("ok");
+		}
+		alert(fullName);
+		return false;
+	}
 </script>
 
 </body>	
